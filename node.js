@@ -14,3 +14,4 @@ friends.push("prajwol")
 friends[3] = "rampur"
 console.log(friends.length)
 console.log(friends)
+console.log(nirmal)
