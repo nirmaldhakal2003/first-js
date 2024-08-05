@@ -13,7 +13,7 @@ console.log(newNumb)
 // suru ko 2 le kha bata katne 
 // arko 2 le kati ota katni 
 // lastko number chai changed garni number
-numbers.splice(2,2,9)
+numbers.splice(2,5,9)
 console.log(numbers)
 
 // use of split
@@ -21,7 +21,7 @@ const text = "I love Rachana"
 const newText = text.split(' ')
 console.log(newText)
 
-const lang = ["nimal","Loves","so","much"]
+const lang = ["nirmal","Loves","so","much"]
 const newLang = lang.splice(2,0,"rachana")
 console.log(lang)
 
