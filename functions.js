@@ -167,8 +167,75 @@ const newBooks= Name.filter(function(book){
 console.log(newBooks)
 
 // using filte to give output of js files 
+
 const file = ["app.js", "a.c","index.html","syle.css","script.js"]
 const result = file.filter(function(files){
 return files.endsWith(".js")
+})
+console.log(result)
+
+// use of reduce function
+const numbers = [1,2,3,4,5]
+const sum = numbers.reduce(function(accumulator,number){
+     return accumulator + number
+},0)
+console.log(sum)
+
+// another example of reduce function 
+const myCart = [
+    {
+      product : "apple",
+      price: 200,
+      qty : 20
+    },
+    {
+        product : "mango",
+        price: 100,
+        qty : 10
+      },
+      {
+        product : "Pineapple",
+        price: 400,
+        qty : 12
+      }
+]
+
+const Newqty = myCart.reduce(function(acc,item){
+    acc.totalPrice += item.price * item.qty
+    acc.totalqty += item.qty
+    return acc
+},{totalPrice : 0, totalqty : 0})
+console.log(Newqty)
+
+// use of filter , with multiple arguments 
+const students = [
+    {
+     Name: "manish",
+     marks : 500,
+     Status : "pass"
+
+    },
+    {
+        Name: "anissh",
+        marks : 100,
+        Status : "fail"
+   
+       },
+       {
+        Name: "manisha",
+        marks : 200,
+        Status : "fail"
+   
+       },
+       {
+        Name: "panisisha",
+        marks : 400,
+        Status : "pass"
+   
+       },
+]
+const result = students.filter(function(num){
+     return num.marks >300 && num.Name.endsWith("sh") && num.Status =="pass"
+
 })
 console.log(result)
