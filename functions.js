@@ -165,3 +165,10 @@ const newBooks= Name.filter(function(book){
     return book.year > 2000
 })
 console.log(newBooks)
+
+// using filte to give output of js files 
+const file = ["app.js", "a.c","index.html","syle.css","script.js"]
+const result = file.filter(function(files){
+return files.endsWith(".js")
+})
+console.log(result)
